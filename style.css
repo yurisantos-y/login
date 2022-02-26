@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-color: #B3F17F;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 98%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #100F15;
+}
+
+.card{
+    width: 400px;
+    height: 450px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #15131b;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.411);
+    margin-right: 100px;
+}
+
+.card h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 23px;
+    margin-bottom: 30px;
+    color: #B3F17F;
+}
+
+.left-login{
+    margin-right: 100px;
+    color:  #B3F17F;
+}
+
+.image{
+    width: 35vw;
+}
+
+.left-login h1{
+    font-size: 1.8vw;
+    margin-right: 100px;
+}
+
+.sign, .password{
+    font-size: 1.05rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 80%;
+    color: rgb(233, 230, 230);
+}
+
+#usuario, #senha{
+    height: 45px;
+    border-radius: 6px;
+    border-style: none;
+    padding-left: 5px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #211f2b;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.39);
+}
+
+
+#usuario:focus-within{
+    box-shadow: 0px 1px 10px rgba(121, 121, 121, 0.555);
+}
+
+#senha:focus-within{
+    box-shadow: 1px 0.5px 10px rgba(121, 121, 121, 0.555);
+}
+
+.password > label {
+    margin-bottom: 6px;
+}
+.sign > label{
+    margin-bottom: 6px;
+}
+
+input{
+    color: #FFF;
+}
+
+.btn{
+    margin-top: 45px;
+    width: 80%;
+    height: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background-color: #B3F17F;
+    color: #201b2c;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 1px 10px #b2f17fa8;
+}
+
+.btn:hover{
+    background-color: #a2ee63;
+}
+
+@media only screen and (max-width: 950px) {
+    .card{
+        width: 85%;
+    }
+    .left-login h1{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login{
+        margin: auto;
+        height: auto;
+    }
+    .right-login{
+        overflow: hidden;
+    }
+
+    .card{
+        margin-bottom: 200px;
+        margin-left: 25px;
+    }
+    .left-login img{
+        width: 40vw;
+    }
+}
